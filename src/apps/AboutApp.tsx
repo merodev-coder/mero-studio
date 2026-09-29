@@ -8,18 +8,19 @@ export default function AboutApp() {
     <div>
       <h1 className="mb-1.5 text-[26px] font-semibold leading-tight tracking-tight">Hi, I'm Ammar.</h1>
       <p className="mb-3 max-w-[68ch] text-[16.5px] leading-relaxed">
-        I build fast, well-structured web systems, from the landing page a visitor sees to the queue and database
-        behind it.
+        I build fast, resilient web applications and high-concurrency backends—from conversion-focused landing pages to
+        real-time event pipelines and distributed task queues.
       </p>
       <p className="mb-3 max-w-[68ch] leading-relaxed">
-        I'm a full-stack web developer in Cairo with 2+ years of experience. I work with HTML, CSS and JavaScript on
-        the front, Node.js and Go on the back, and I care about SEO, landing-page performance and the marketing
-        platforms (HubSpot, WordPress) that businesses actually run on. I like tracking down slow pages and broken
-        layouts and fixing them properly.
+        I'm a full-stack developer in Cairo with 2+ years of experience[cite: 1]. My core stack includes TypeScript and React on
+        the frontend[cite: 1], Node.js and Go on the backend[cite: 1], and PostgreSQL, MongoDB, and Redis for storage and caching[cite: 1]. I bridge
+        engineering and business needs by optimizing landing page speed and SEO[cite: 1], as well as integrating tools like
+        HubSpot and WordPress[cite: 1].
       </p>
       <p className="mb-3 max-w-[68ch] leading-relaxed">
-        Outside client work I build distributed systems for fun: task queues, event-driven security bots and AI
-        agents. You'll find them in the Projects folder.
+        I spend my free time exploring system design and automation—building distributed job processing engines (Go, Redis
+        Streams, Prometheus/Grafana)[cite: 1], low-latency security infrastructure[cite: 1], and custom LLM-powered WhatsApp agents[cite: 1].
+        Explore my Projects folder to see them in action.
       </p>
 
       <div className="my-4 grid grid-cols-2 gap-2.5 sm:grid-cols-4">
