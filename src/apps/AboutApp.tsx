@@ -12,14 +12,14 @@ export default function AboutApp() {
         real-time event pipelines and distributed task queues.
       </p>
       <p className="mb-3 max-w-[68ch] leading-relaxed">
-        I'm a full-stack developer in Cairo with 2+ years of experience[cite: 1]. My core stack includes TypeScript and React on
-        the frontend[cite: 1], Node.js and Go on the backend[cite: 1], and PostgreSQL, MongoDB, and Redis for storage and caching[cite: 1]. I bridge
-        engineering and business needs by optimizing landing page speed and SEO[cite: 1], as well as integrating tools like
-        HubSpot and WordPress[cite: 1].
+        I'm a full-stack developer in Cairo with 2+ years of experience. My core stack includes TypeScript and React on
+        the frontend, Node.js and Go on the backend, and PostgreSQL, MongoDB, and Redis for storage and caching. I bridge
+        engineering and business needs by optimizing landing page speed and SEO, as well as integrating tools like
+        HubSpot and WordPress.
       </p>
       <p className="mb-3 max-w-[68ch] leading-relaxed">
         I spend my free time exploring system design and automation—building distributed job processing engines (Go, Redis
-        Streams, Prometheus/Grafana)[cite: 1], low-latency security infrastructure[cite: 1], and custom LLM-powered WhatsApp agents[cite: 1].
+        Streams, Prometheus/Grafana), low-latency security infrastructure, and custom LLM-powered WhatsApp agents.
         Explore my Projects folder to see them in action.
       </p>
 
