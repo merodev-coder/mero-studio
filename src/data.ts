@@ -12,6 +12,22 @@ export const PROFILE: Profile = {
 
 export const PROJECTS: Project[] = [
   {
+    id: "probot",
+    file: "Probot.proj",
+    name: "Probot",
+    kind: "Discord bot · 1-year contract",
+    status: "private",
+    summary:
+      "I worked as a full-stack developer on Probot, a Discord bot, for a full year. The contract ran from September 2025 and finished at the start of September 2026.",
+    points: [
+      "One-year full-stack contract on a live Discord bot, completed at the start of September 2026.",
+      "Built and maintained bot features and backend services across the stack, working with Discord API events, commands and data storage.",
+      "Shipped features and fixes to a bot running in production.",
+    ],
+    stack: ["Discord bot", "Full-stack", "Node.js", "Discord API"],
+    links: [],
+  },
+  {
     id: "discordguard",
     file: "DiscordGuard-Core.proj",
     name: "DiscordGuard-Core",
@@ -191,10 +207,11 @@ export const STATIC_APPS: Record<StaticAppId, AppMeta> = {
   tech: { title: "tech-stack.sys", icon: "sys", width: 700, height: 560 },
   projects: { title: "C:/Projects", icon: "folder", width: 700, height: 520, flush: true },
   contact: { title: "contact.sh", icon: "term", width: 640, height: 440, flush: true },
+  snake: { title: "snake.exe", icon: "game", width: 400, height: 540, flush: true },
   cv: { title: "Ammar_Altanany_CV.pdf", icon: "pdf", width: 760, height: 620, flush: true },
 };
 
-export const DESKTOP_ORDER: StaticAppId[] = ["about", "experience", "tech", "projects", "contact", "cv"];
+export const DESKTOP_ORDER: StaticAppId[] = ["about", "experience", "tech", "projects", "contact", "snake", "cv"];
 
 export function findProject(id: string): Project | undefined {
   return PROJECTS.find((p) => p.id === id);

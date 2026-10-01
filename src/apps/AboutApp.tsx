@@ -27,7 +27,7 @@ export default function AboutApp() {
         <Fact big="2+ years" small="Professional experience" />
         <Fact big="Cairo" small="Working remotely" />
         <Fact big="HITU" small="Bachelor's degree (in progress)" />
-        <Fact big="99.9%" small="Uptime on client web assets" />
+        <Fact big="1 year" small="Full-stack on Probot (Discord bot)" />
       </div>
 
       <div className="mt-4 flex flex-wrap gap-2">

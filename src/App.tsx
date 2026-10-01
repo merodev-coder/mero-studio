@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import BootScreen from "./components/BootScreen";
 import Desktop from "./components/Desktop";
 import TaskBar from "./components/TaskBar";
+import Effects from "./components/Effects";
 import StartMenu from "./components/StartMenu";
 import { WindowManagerProvider, useWindowManager } from "./state/WindowManagerContext";
 
@@ -65,6 +66,7 @@ function Shell() {
     <>
       {!booted && <BootScreen key={bootKey} onDone={handleBootDone} />}
       <Desktop />
+      <Effects />
       <StartMenu open={startOpen} onClose={() => setStartOpen(false)} onRestart={restart} />
       <TaskBar startOpen={startOpen} onToggleStart={() => setStartOpen((v) => !v)} />
     </>

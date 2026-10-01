@@ -92,6 +92,16 @@ export function PdfIcon() {
   );
 }
 
+export function GameIcon() {
+  return (
+    <svg viewBox="0 0 48 48">
+      <rect x="5" y="8" width="38" height="32" rx="5" fill="#0a1a12" stroke="#38d996" strokeWidth="2" />
+      <path d="M12 32h10v-8h8v-8" fill="none" stroke="#38d996" strokeWidth="4" strokeLinecap="square" />
+      <rect x="32" y="29" width="5" height="5" fill="#ffb347" />
+    </svg>
+  );
+}
+
 const ICONS: Record<IconName, () => ReactElement> = {
   doc: DocIcon,
   log: LogIcon,
@@ -101,6 +111,7 @@ const ICONS: Record<IconName, () => ReactElement> = {
   live: LiveIcon,
   term: TermIcon,
   pdf: PdfIcon,
+  game: GameIcon,
 };
 
 export function Icon({ name }: { name: IconName }) {

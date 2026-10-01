@@ -6,7 +6,8 @@ export type IconName =
   | "proj"
   | "live"
   | "term"
-  | "pdf";
+  | "pdf"
+  | "game";
 
 export type ProjectStatus = "live" | "repo" | "private";
 
@@ -51,7 +52,8 @@ export type StaticAppId =
   | "tech"
   | "projects"
   | "contact"
-  | "cv";
+  | "cv"
+  | "snake";
 
 /** Any window id: a static app id, or "proj:<projectId>". */
 export type AppId = StaticAppId | `proj:${string}`;

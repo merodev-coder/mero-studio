@@ -20,7 +20,18 @@ const OPEN_MAP: Record<string, AppId> = {
   projects: "projects",
   cv: "cv",
   "cv.pdf": "cv",
+  snake: "snake",
+  "snake.exe": "snake",
 };
+
+const FORTUNES = [
+  "It works on my machine. Ship the machine.",
+  "A goroutine a day keeps the deadlock away.",
+  "There are only two hard things: cache invalidation, naming things, and off-by-one errors.",
+  "Your next bug is already in production. It's shy.",
+  "Redis never forgets, except when you set a TTL.",
+  "Have you tried turning the worker pool off and on again?",
+];
 
 export default function ContactTerminalApp() {
   const { openWindow } = useWindowManager();
@@ -116,6 +127,12 @@ export default function ContactTerminalApp() {
             <br />
             &nbsp;&nbsp;cv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;open my CV
             <br />
+            &nbsp;&nbsp;neofetch&nbsp;&nbsp;&nbsp;system info
+            <br />
+            &nbsp;&nbsp;snake&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;play a game
+            <br />
+            &nbsp;&nbsp;fortune, coffee, matrix, confetti
+            <br />
             &nbsp;&nbsp;clear&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;clear the screen
           </>
         );
@@ -149,7 +166,7 @@ export default function ContactTerminalApp() {
         print(links.github);
         break;
       case "ls":
-        print("about-me.txt  experience.log  tech-stack.sys  Projects/  contact.sh  CV.pdf");
+        print("about-me.txt  experience.log  tech-stack.sys  Projects/  contact.sh  snake.exe  CV.pdf");
         break;
       case "cv":
         print("Opening CV…");
@@ -169,6 +186,47 @@ export default function ContactTerminalApp() {
         }
         break;
       }
+      case "neofetch":
+        print(
+          <>
+            <span className="text-accent">guest</span>@<span className="text-accent">meroOS</span>
+            <br />
+            OS &nbsp;&nbsp;&nbsp;&nbsp;meroOS 1.0 (React + Three.js)
+            <br />
+            Role &nbsp;&nbsp;{PROFILE.role}
+            <br />
+            Stack &nbsp;Go, TypeScript, Node.js, React
+            <br />
+            Data &nbsp;&nbsp;Redis, MongoDB, PostgreSQL
+            <br />
+            Recent &nbsp;1 year full-stack on Probot (Discord bot)
+          </>
+        );
+        break;
+      case "fortune":
+        print(FORTUNES[Math.floor(Math.random() * FORTUNES.length)]);
+        break;
+      case "coffee":
+        print(
+          <>
+            {"   ( (\n    ) )\n  ........\n  |      |]\n  \\      /\n   `----'"}
+            <br />
+            Brewing… goroutines are now 12% faster.
+          </>
+        );
+        break;
+      case "matrix":
+        print("Wake up, Ammar… (click anywhere to exit)");
+        window.dispatchEvent(new Event("mero:matrix"));
+        break;
+      case "confetti":
+        print("🎉");
+        window.dispatchEvent(new Event("mero:confetti"));
+        break;
+      case "snake":
+        print("Launching snake.exe…");
+        openWindow("snake");
+        break;
       case "sudo":
         print("Nice try. Permission denied, but I do like the confidence.");
         break;

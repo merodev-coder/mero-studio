@@ -6,8 +6,27 @@ export default function ExperienceApp() {
 
       <h3 className="text-base font-semibold text-white">Full-Stack Developer</h3>
       <div>
+        <span className="text-accent">Probot (Discord bot)</span> · Remote · 1-year contract ·{" "}
+        <span className="text-ok">Sep 2025 – Sep 2026</span>
+      </div>
+      <ul className="my-2.5 list-none space-y-2 pl-0">
+        {[
+          "Worked as a full-stack developer on Probot for a full year; the contract finished at the start of September 2026.",
+          "Built and maintained bot features and backend services across the stack, working with Discord API events, commands and data storage.",
+          "Shipped features and fixes to a live bot in production.",
+        ].map((line) => (
+          <li key={line} className="relative pl-[22px] before:absolute before:left-1 before:text-ok before:content-['+']">
+            {line}
+          </li>
+        ))}
+      </ul>
+
+      <hr className="my-5 border-t border-dashed border-[#2a3b5c]" />
+
+      <h3 className="text-base font-semibold text-white">Full-Stack Developer</h3>
+      <div>
         <span className="text-accent">Freelance (independent contractor)</span> · Remote ·{" "}
-        <span className="text-ok">Jan 2024 – present</span>
+        <span className="text-ok">2024 – present</span>
       </div>
       <ul className="my-2.5 list-none space-y-2 pl-0">
         {[

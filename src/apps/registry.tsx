@@ -5,6 +5,7 @@ import ExperienceApp from "./ExperienceApp";
 import TechApp from "./TechApp";
 import ProjectsFolderApp from "./ProjectsFolderApp";
 import ContactTerminalApp from "./ContactTerminalApp";
+import SnakeApp from "./SnakeApp";
 import CVApp from "./CVApp";
 import ProjectDetailApp from "./ProjectDetailApp";
 
@@ -26,6 +27,8 @@ export function renderApp(id: AppId) {
       return <ProjectsFolderApp />;
     case "contact":
       return <ContactTerminalApp />;
+    case "snake":
+      return <SnakeApp />;
     case "cv":
       return <CVApp />;
     default:

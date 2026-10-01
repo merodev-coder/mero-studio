@@ -54,7 +54,7 @@ export default function Desktop() {
 
       <aside className="pointer-events-none absolute right-3 top-3 z-0 hidden max-w-[230px] rotate-[1.5deg] rounded-lg bg-accent px-3.5 py-3 text-[13px] leading-relaxed text-accentink shadow-[0_10px_24px_rgba(0,0,0,0.35)] sm:block">
         <strong className="block text-[15px]">Welcome.</strong>
-        Double-click a file to open it.
+        Double-click a file to open it.<br />Psst: try the Konami code.
       </aside>
       <aside className="pointer-events-none absolute bottom-3.5 right-3 z-0 max-w-[200px] rounded-lg bg-accent px-3.5 py-3 text-[13px] leading-relaxed text-accentink shadow-[0_10px_24px_rgba(0,0,0,0.35)] sm:hidden">
         <strong className="block text-[15px]">Welcome.</strong>
