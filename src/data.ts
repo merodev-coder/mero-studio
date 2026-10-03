@@ -119,7 +119,7 @@ export const PROJECTS: Project[] = [
     id: "kimo",
     file: "kimostore.net.proj",
     name: "Kimo Store",
-    kind: "E-commerce · Electronics",
+    kind: "E-commerce · Electronics · Team project",
     status: "live",
     summary:
       "A large online electronics store for the Egyptian market, selling computers, laptops, phones, home appliances, networking gear and CCTV systems, with showrooms in Cairo and Alexandria.",
@@ -128,9 +128,27 @@ export const PROJECTS: Project[] = [
       "English and Arabic storefront.",
       "Hot-deals sections with discounts and countdowns, promo codes and installment options.",
       "Runs on Shopify, with iOS and Android apps alongside the website.",
+      "Built by a team; I was one of the developers on it, not the sole author.",
     ],
     stack: ["Shopify", "E-commerce", "Bilingual EN / AR"],
     links: [{ label: "Visit live site", url: "https://kimostore.net/", hot: true }],
+  },
+  {
+    id: "malvin",
+    file: "webmalvin.com.proj",
+    name: "MALVIN",
+    kind: "E-commerce · Fashion · Team project",
+    status: "live",
+    summary:
+      "An Arabic online clothing store selling t-shirts, hoodies, pants and shorts, built on the Salla e-commerce platform. It was built by a team, and I was one of the developers on it.",
+    points: [
+      "Arabic (right-to-left) storefront with category pages for t-shirts, hoodies, pants and shorts.",
+      "Homepage with banners, featured categories, latest products and a brand story.",
+      "Return and exchange policy page and secure shipping information.",
+      "Runs on Salla. Built by a team; I was one of the developers, not the sole author.",
+    ],
+    stack: ["Salla", "E-commerce", "Arabic (RTL)"],
+    links: [{ label: "Visit live site", url: "https://webmalvin.com/", hot: true }],
   },
   {
     id: "whatsapp-ai",
@@ -163,21 +181,6 @@ export const PROJECTS: Project[] = [
     ],
     stack: ["Go", "DiscordGo"],
     links: [],
-  },
-  {
-    id: "awesome",
-    file: "awesome-claude-code.link",
-    name: "Awesome Claude Code",
-    kind: "Bookmarked resource",
-    status: "repo",
-    summary:
-      "A community-curated list of commands, CLAUDE.md files, CLI tools and workflows for Claude Code. It's part of the reading list behind how I work with AI-assisted development.",
-    points: [
-      "Not my repository: it's maintained by its own community.",
-      "Linked here because I build with AI coding tools and care about doing it well.",
-    ],
-    stack: ["AI-assisted dev", "Claude Code", "Workflows"],
-    links: [{ label: "Open the list", url: "https://github.com/hesreallyhim/awesome-claude-code", hot: true }],
   },
 ];
 
